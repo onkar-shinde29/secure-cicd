@@ -9,10 +9,11 @@ pipeline {
     stages {
 
         stage('Clone Code') {
-            steps {
-                git 'https://github.com/onkar-shinde29/secure-cicd.git'
-            }
-        }
+    steps {
+        git url: 'https://github.com/onkar-shinde29/secure-cicd.git',
+            branch: 'main'
+    }
+}
 
         stage('Build Docker Image') {
             steps {
