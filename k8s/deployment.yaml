@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
       - name: app
-        image: onkarshinde/devsecops-app:latest
+        image: onkarshinde29/devsecops-app:latest
         ports:
         - containerPort: 5000
