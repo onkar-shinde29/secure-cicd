@@ -25,7 +25,7 @@ pipeline {
         stage('Scan Image (Trivy)') {
             steps {
                 sh '''
-                trivy image --exit-code 1 --severity CRITICAL onkarshinde29/devsecops-app:latest
+                trivy image --exit-code 1 --severity HIGH,CRITICAL onkarshinde29/devsecops-app:latest
                 '''
             }
         }
