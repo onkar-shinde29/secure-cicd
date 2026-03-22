@@ -4,7 +4,7 @@ pipeline {
     environment {
         IMAGE_NAME = "onkarshinde29/devsecops-app"
         TAG = "latest"
-        KUBECONFIG = "/home/ubuntu/.kube/config"
+        KUBECONFIG = "/var/lib/jenkins/.kube/config"
     }
 
     stages {
